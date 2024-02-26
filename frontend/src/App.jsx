@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import currency from './constants/digital-currency.js';
+import currency from './constants/digital-currency';
 import "./App.css"
 
 function App() {
@@ -32,8 +32,7 @@ function App() {
 
   return (
     <div id='body'>
-      <h1 id='title'>Crypto Currency Converter</h1>
-
+      <h1 id='title'>Crypto Currency Conversion</h1>
 
       <div id='card'>
         <div>
@@ -60,7 +59,7 @@ function App() {
           </label >
           <br />
           <label className='all-labels'>
-            Amount:-
+            Trading for:-
           </label>
           <br />
           <input type="number" className="input-tag" value={amount} onChange={(e) => setAmount(e.target.value)} />
@@ -69,11 +68,11 @@ function App() {
         </div>
         {conversionError && <div className="error">{conversionError}</div>}
         {convertedAmount !== null && (
-          <div className={convertedAmount === 0 ? "converted-amt" : "zero-value"}>
-        <p>Converted Amount: {targetCurrencySymbol} {convertedAmount}</p>
-      </div>
+          <div className={convertedAmount === 0 ? "converted-amt" : "zero-value"} style={{ textAlign: 'center' }}>
+            <p>Converted Amount: {targetCurrencySymbol} {convertedAmount}</p>
+          </div>
         )}
-    </div>
+      </div>
 
     </div >
   );

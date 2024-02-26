@@ -379,7 +379,7 @@ const physicalCurrencySymbols = {
   "SCR": "₨",
   "SDG": "SDG",
 }
-module.exports = {
+ export default  {
   physicalCurrencies: physicalCurrencies,
   cryptoCurrencies: cryptoCurrencies,
   physicalCurrencySymbols: physicalCurrencySymbols

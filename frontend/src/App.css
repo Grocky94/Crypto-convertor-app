@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%;
   border: 1px solid #000;
-  background-image: url("./Cryptocurrency-Wallpaper-5.jpg");
+  background-image: url("./image/Cryptocurrency-Wallpaper-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -40,7 +40,7 @@
   width: 30%;
   margin-left: auto;
   margin-right: 5%;
-  border: 5px solid white;
+  border: 5px solid rgb(145, 162, 168);
   border-radius: 10px;
   box-sizing: border-box;
   line-height: 32px;
@@ -55,17 +55,19 @@
 }
 
 .select-tag {
-  width: 100%;
+  width: 90%;
   height: 40px;
   outline: none;
   font-size: 25px;
   border-radius: 10px;
+  margin-left: 5%;
 }
 
 .input-tag {
-  width: 100%;
+  width: 90%;
   height: 40px;
   outline: none;
+  margin-left: 5%;
   font-size: 25px;
   border-radius: 10px;
   border-color: black;
@@ -73,10 +75,11 @@
 
 #button-tag {
   height: 40px;
-  width: 100%;
+  width: 50%;
   margin: 2% 0;
   font-size: 25px;
   border-radius: 10px;
+  margin-left: 25%;
   /* outline: none; */
   border: 1px solid;
   /* color: #713c15; */
@@ -103,231 +106,8 @@
 }
 
 .error {
-  font-size: 1.5em;
+  font-size: 1em;
   font-style: italic;
   color: white;
-}
-
-@media screen and (max-width:320px) {
-  #body {
-    width: 100%;
-    background-color: #132a3d;
-    background-image: none;
-    border: 1px solid #000;
-  }
-
-  #title {
-    font-size: 1.5em;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px white
-  }
-
-  #card {
-    height: 80%;
-    width: 80%;
-    margin: auto;
-    line-height: 8vh;
-    background-image: url("./OIP.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .all-labels {
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  .select-tag {
-    max-width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    position: relative;
-    font-size: 15px;
-  }
-
-  .input-tag {
-    max-width: 100%;
-    font-size: 15px;
-  }
-
-  #button-tag {
-    /* height: 25px; */
-    width: 100%;
-    margin: 2% 0;
-    font-size: 1em;
-    border-radius: 10px;
-    /* outline: none; */
-    border: 1px solid;
-    /* color: #713c15; */
-  }
-
-  .converted-amt {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .error {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .zero-value {
-    color: #094397;
-    background-color: white;
-  }
-}
-
-@media screen and (max-width:415px) {
-  #body {
-    width: 100%;
-    background-color: #132a3d;
-    background-image: none;
-    border: 1px solid #000;
-  }
-
-  #title {
-    font-size: 1.5em;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px white
-  }
-
-  #card {
-    height: 60%;
-    width: 80%;
-    margin: auto;
-    line-height: 5vh;
-    background-image: url("./OIP.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .all-labels {
-    font-size: 1.2em;
-    font-weight: 600;
-  }
-
-  .select-tag {
-    max-width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    position: relative;
-    font-size: 15px;
-  }
-
-  .input-tag {
-    max-width: 100%;
-    font-size: 20px;
-  }
-
-  .converted-amt {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .error {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .zero-value {
-    color: #094397;
-    background-color: white;
-  }
-}
-
-@media screen and (max-width:769px) {
-  #body {
-    width: 100%;
-    background-color: #132a3d;
-    background-image: none;
-    border: 1px solid #000;
-    background-image: url("./Cryptocurrency-Wallpaper-5.jpg");
-    background-size: 90vh 140vw;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    animation: shine 2s infinite alternate;
-  }
-
-  @keyframes shine {
-    from {
-      opacity: 0.9;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  #title {
-    font-size: 1.5em;
-    text-align: center;
-    color: #fcdb76;
-    padding-top: 8%;
-    text-shadow: 2px 2px 4px #fcdb76
-  }
-
-  #card {
-    height: 60%;
-    width: 40%;
-    margin-left: auto;
-    margin-right: 5%;
-    line-height: 6vh;
-
-  }
-
-  .all-labels {
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-
-  .select-tag {
-    max-width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    position: relative;
-    font-size: 20px;
-  }
-
-  .input-tag {
-    max-width: 100%;
-    font-size: 20px;
-  }
-
-  .converted-amt {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .error {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    background-color: white;
-    color: #094397;
-  }
-
-  .zero-value {
-    color: #094397;
-    background-color: white;
-  }
-
+  text-align: center;
 }
