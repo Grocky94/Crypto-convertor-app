@@ -14,7 +14,7 @@ function App() {
 
   const handleConvert = async () => {
     setConversionError(null);
-    if (!from || !to || !amount) {
+    if (!from || !to ) {
       setConversionError('Please select currencies and enter amount.');
       return;
     }
