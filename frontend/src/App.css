@@ -100,6 +100,12 @@
   font-style: italic;
   color: white;
 }
+.loader{
+  font-size: 1.5em;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
 
 .zero-value {
   color: white;

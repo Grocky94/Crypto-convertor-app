@@ -10,9 +10,15 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [targetCurrencySymbol, setTargetCurrencySymbol] = useState(null)
   const [conversionError, setConversionError] = useState(null); // Track errors
-
+  const [loading, setLoading] = useState(false)
 
   const handleConvert = async () => {
+    setConversionError(null);
+    if (!from || !to || !amount) {
+      setConversionError('Please select currencies and enter amount.');
+      return;
+    }
+    setLoading(true);
     try {
       const response = await axios.post('https://crypto-convertor-app.onrender.com/convert', {
         from,
@@ -27,6 +33,9 @@ function App() {
       setConvertedAmount(null);
       setTargetCurrencySymbol(null);
       setConversionError('Conversion failed. Please check your inputs and try again.');
+    }
+    finally {
+      setLoading(false);
     }
   };
 
@@ -66,6 +75,7 @@ function App() {
           <br />
           <button id="button-tag" onClick={handleConvert}>Convert</button>
         </div>
+        {loading && <div className="loader">Loading...</div>}
         {conversionError && <div className="error">{conversionError}</div>}
         {convertedAmount !== null && (
           <div className={convertedAmount === 0 ? "converted-amt" : "zero-value"} style={{ textAlign: 'center' }}>
