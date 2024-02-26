@@ -13,6 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   const handleConvert = async () => {
+    setConvertedAmount(null);
     setConversionError(null);
     if (!from || !to ) {
       setConversionError('Please select currencies and enter amount.');
